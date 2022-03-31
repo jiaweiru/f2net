@@ -49,3 +49,4 @@ Epoch: 48 - train loss: 6.04e-03 - valid loss: 6.64e-03, valid stoi: 9.95e-01
 Epoch: 49 - train loss: 6.03e-03 - valid loss: 6.64e-03, valid stoi: 9.95e-01
 Epoch: 50 - train loss: 6.02e-03 - valid loss: 6.63e-03, valid stoi: 9.95e-01
 Epoch loaded: 50 - test loss: 7.58e-03, test stoi: 9.95e-01
+Epoch loaded: 50 - test loss: 7.58e-03, test stoi: 9.95e-01

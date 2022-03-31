@@ -254,3 +254,127 @@ urllib3==1.26.9
 2022-03-31 11:25:14,130 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/4234/save/CKPT+2022-03-31+11-25-14+00
 2022-03-31 11:25:14,133 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
 2022-03-31 11:25:50,613 - speechbrain.utils.train_logger - INFO - Epoch loaded: 50 - test loss: 7.58e-03, test stoi: 9.95e-01
+2022-03-31 14:01:48,084 - speechbrain.core - INFO - Beginning experiment!
+2022-03-31 14:01:48,085 - speechbrain.core - INFO - Experiment folder: ./results/4234
+2022-03-31 14:01:48,230 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-03-31 14:01:48,234 - speechbrain.utils.superpowers - DEBUG - 1c70d82
+
+
+2022-03-31 14:01:48,260 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-03-31 14:01:50,477 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-03-31 14:01:50,478 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/4234/save/CKPT+2022-03-31+11-25-14+00
+2022-03-31 14:01:50,499 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/4234/save/CKPT+2022-03-31+11-25-14+00
+2022-03-31 14:01:58,359 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rujiawei/Gitprojects/f2net/train.py", line 321, in <module>
+    test_stats = se_brain.evaluate(
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 1193, in evaluate
+    loss = self.evaluate_batch(batch, stage=Stage.TEST)
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 930, in evaluate_batch
+    loss = self.compute_objectives(out, batch, stage=stage)
+  File "/home/rujiawei/Gitprojects/f2net/train.py", line 141, in compute_objectives
+    torchaudio.save(f"./test_result/down{i}.flac", torch.unsqueeze(sig_down, 0), 8000)
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/torchaudio/backend/sox_io_backend.py", line 320, in save
+    torch.ops.torchaudio.sox_io_save_audio_file(
+RuntimeError: Input tensor has to be 2D.
+2022-03-31 14:03:51,495 - speechbrain.core - INFO - Beginning experiment!
+2022-03-31 14:03:51,496 - speechbrain.core - INFO - Experiment folder: ./results/4234
+2022-03-31 14:03:51,640 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-03-31 14:03:51,644 - speechbrain.utils.superpowers - DEBUG - 1c70d82
+
+
+2022-03-31 14:03:51,654 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-03-31 14:03:54,842 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-03-31 14:03:54,843 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/4234/save/CKPT+2022-03-31+11-25-14+00
+2022-03-31 14:03:54,881 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results/4234/save/CKPT+2022-03-31+11-25-14+00
+2022-03-31 14:04:58,686 - speechbrain.utils.train_logger - INFO - Epoch loaded: 50 - test loss: 7.58e-03, test stoi: 9.95e-01

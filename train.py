@@ -133,9 +133,10 @@ class SEBrain(sb.Brain):
                 clean_wavs = clean_wavs.to('cpu')
                 predictions["wav"] = predictions["wav"].to('cpu')
                 os.mkdir("test_result")
+                down = torchaudio.transforms.Resample(16000, 8000)
                 up = torchaudio.transforms.Resample(8000, 16000)
                 for i in range(clean_wavs.shape[0]):
-                    sig_down = clean_wavs[i][::2]
+                    sig_down = down(clean_wavs[i])
                     sig_up = up(sig_down)
                     torchaudio.save(f"./test_result/down{i}.flac", torch.unsqueeze(sig_down, 0), 8000)
                     torchaudio.save(f"./test_result/up{i}.flac", torch.unsqueeze(sig_up, 0), 16000)
