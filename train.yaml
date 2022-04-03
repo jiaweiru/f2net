@@ -42,6 +42,7 @@ win_length: 25
 hop_length: 10
 n_fft: 400
 window_fn: !name:torch.hann_window
+norm: False
 
 # Training Parameters
 number_of_epochs: 50
@@ -68,6 +69,7 @@ compute_ISTFT: !new:speechbrain.processing.features.ISTFT
 resynth: !name:speechbrain.processing.signal_processing.resynthesize
     stft: !ref <compute_STFT>
     istft: !ref <compute_ISTFT>
+    normalize_wavs: !ref <norm>
 
 # To design a custom model, either just edit the simple CustomModel
 # class that's listed here, or replace this `!new` call with a line

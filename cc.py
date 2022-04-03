@@ -1,16 +1,10 @@
 import torch
-import torchaudio
+flag = torch.cuda.is_available()
+print(flag)
 
-a = torch.rand(3, 3).cuda()
-print(a)
-b = a.to('cpu')
-b = b + 1
-print(a)
-# a = a * 1.
-# length = a.shape[0]
-# a1 = a[:-1] if length % 2 == 1 else a
-# downsample = torchaudio.transforms.Resample(16000, 8000)
-# upsample = torchaudio.transforms.Resample(8000, 16000)
-# b = a1[::2]
-# b_up = upsample(b)
-# print(a.shape, a1.shape, b_up.shape)
+ngpu= 1
+# Decide which device we want to run on
+device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
+print(device)
+print(torch.cuda.get_device_name(0))
+print(torch.rand(3,3).cuda())

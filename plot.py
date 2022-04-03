@@ -1,7 +1,10 @@
 import torch
+import numpy
+import librosa
+import librosa.display
 import torchaudio
 import speechbrain
-from speechbrain.processing import features,signal_processing
+from speechbrain.processing import features, signal_processing, NMF
 import matplotlib.pyplot as plt
 
 
@@ -51,6 +54,7 @@ def plot_specgram(waveform, sample_rate, title="Spectrogram", xlim=None, ylim=No
 if __name__ == "__main__":
     path = "./data/LibriSpeech/dev-clean-2/2035/147961/2035-147961-0025.flac"
 
+
     """
     origin spec
     """
@@ -65,7 +69,7 @@ if __name__ == "__main__":
     # downsample = torchaudio.transforms.Resample(16000, 8000)
     # wave_down = downsample(waveform)
     # plot_specgram(wave_down, sr // 2, winl=200, hopl=80, ylim=[0, 8000], title="down sample")
-    # plot_specgram(wave_dowm, sr // 2, ylim=[0, 8000], winl=200, hopl=80, mode='phase')
+    # plot_specgram(wave_down, sr // 2, ylim=[0, 8000], winl=200, hopl=80, mode='phase')
 
     """
     upsample 
@@ -86,14 +90,46 @@ if __name__ == "__main__":
     """
     about infer
     """
-    wav_input, sr = torchaudio.load("./test_result/up10.flac")
-    wav_infer, _ = torchaudio.load("./test_result/infer10.flac")
-    wav_clean, _ = torchaudio.load("./test_result/clean10.flac")
-    plot_waveform(wav_input, 16000, title="up")
-    plot_waveform(wav_clean, 16000, title="clean")
-    plot_waveform(wav_infer, 16000, title="infer")
-    plot_specgram(wav_input, sr, winl=400, hopl=160, title="up")
-    plot_specgram(wav_clean, sr, winl=400, hopl=160, title="clean")
-    plot_specgram(wav_infer, sr, winl=400, hopl=160, title="infer")
+
+    # wav_down, _ = torchaudio.load("./test_result3/down11.flac")
+    # wav_infer, _ = torchaudio.load("./test_result3/infer11.flac")
+    # wav_clean, _ = torchaudio.load("./test_result3/clean11.flac")
+    # plot_waveform(wav_down, 8000, title="down")
+    # plot_waveform(wav_clean, 16000, title="clean")
+    # plot_waveform(wav_infer, 16000, title="infer")
+    # plot_specgram(wav_down, 8000, winl=200, hopl=80, ylim=[0, 8000], title="down")
+    # plot_specgram(wav_clean, 16000, winl=400, hopl=160, title="clean")
+    # plot_specgram(wav_infer, 16000, winl=400, hopl=160, title="infer")
+    #
+    # y, _ = librosa.load("./test_result3/clean11.flac", 16000)
+    # z, _ = librosa.load("./test_result3/infer11.flac", 16000)
+    # fig, ax = plt.subplots(nrows=2, ncols=1, sharex=True)
+    # Y = librosa.amplitude_to_db(numpy.abs(librosa.stft(y, n_fft=400, hop_length=160, win_length=400)), ref=numpy.max)
+    # Z = librosa.amplitude_to_db(numpy.abs(librosa.stft(z, n_fft=400, hop_length=160, win_length=400)), ref=numpy.max)
+    # img = librosa.display.specshow(Y, n_fft=400, hop_length=160, win_length=400, y_axis='linear', x_axis='time',
+    #                                sr=16000, ax=ax[0])
+    # imm2 = librosa.display.specshow(Z, n_fft=400, hop_length=160, win_length=400, y_axis='linear', x_axis='time',
+    #                                 sr=16000, ax=ax[1])
+    # ax[0].set(title='16k')
+    # ax[1].set(title='16k from 8k')
+    # fig.tight_layout()
+    # plt.show()
+
+    y, _ = librosa.load("./Male_8k.wav", 8000)
+    z, _ = librosa.load("./Male_16k.wav", 16000)
+    fig, ax = plt.subplots(nrows=2, ncols=1, sharex=True)
+    Y = librosa.amplitude_to_db(numpy.abs(librosa.stft(y, n_fft=200, hop_length=80, win_length=200)), ref=numpy.max)
+    Z = librosa.amplitude_to_db(numpy.abs(librosa.stft(z, n_fft=400, hop_length=160, win_length=400)), ref=numpy.max)
+    img = librosa.display.specshow(Y, n_fft=200, hop_length=80, win_length=200, y_axis='linear', x_axis='time',
+                                   sr=8000, ax=ax[0])
+    imm2 = librosa.display.specshow(Z, n_fft=400, hop_length=160, win_length=400, y_axis='linear', x_axis='time',
+                                    sr=16000, ax=ax[1])
+    ax[0].set(title='8k')
+    ax[0].set_ylim([0, 8000])
+    ax[1].set(title='16k from 8k')
+    fig.tight_layout()
+    plt.show()
+
+
 
 

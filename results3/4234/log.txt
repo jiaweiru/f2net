@@ -1,0 +1,660 @@
+2022-04-01 18:12:39,416 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 18:12:39,416 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 18:12:39,551 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 18:12:39,555 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 18:12:39,590 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 18:12:41,604 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 18:12:41,604 - speechbrain.utils.checkpoints - INFO - Would load a checkpoint here, but none found yet.
+2022-04-01 18:12:41,604 - speechbrain.utils.epoch_loop - INFO - Going into epoch 1
+2022-04-01 18:13:16,278 - speechbrain.utils.train_logger - INFO - Epoch: 1 - train loss: 3.32e-02 - valid loss: 1.72e-02, valid stoi: 9.74e-01
+2022-04-01 18:13:16,297 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-13-16+00
+2022-04-01 18:13:16,298 - speechbrain.utils.epoch_loop - INFO - Going into epoch 2
+2022-04-01 18:13:51,681 - speechbrain.utils.train_logger - INFO - Epoch: 2 - train loss: 1.47e-02 - valid loss: 1.70e-02, valid stoi: 9.74e-01
+2022-04-01 18:13:51,700 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-13-51+00
+2022-04-01 18:13:51,703 - speechbrain.utils.epoch_loop - INFO - Going into epoch 3
+2022-04-01 18:14:25,722 - speechbrain.utils.train_logger - INFO - Epoch: 3 - train loss: 1.44e-02 - valid loss: 1.68e-02, valid stoi: 9.74e-01
+2022-04-01 18:14:25,741 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-14-25+00
+2022-04-01 18:14:25,749 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-13-51+00
+2022-04-01 18:14:25,749 - speechbrain.utils.epoch_loop - INFO - Going into epoch 4
+2022-04-01 18:15:00,346 - speechbrain.utils.train_logger - INFO - Epoch: 4 - train loss: 1.43e-02 - valid loss: 1.67e-02, valid stoi: 9.74e-01
+2022-04-01 18:15:00,371 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-15-00+00
+2022-04-01 18:15:00,380 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-14-25+00
+2022-04-01 18:15:00,380 - speechbrain.utils.epoch_loop - INFO - Going into epoch 5
+2022-04-01 18:15:53,976 - speechbrain.utils.train_logger - INFO - Epoch: 5 - train loss: 1.41e-02 - valid loss: 1.66e-02, valid stoi: 9.74e-01
+2022-04-01 18:15:54,002 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-15-53+00
+2022-04-01 18:15:54,020 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-15-00+00
+2022-04-01 18:15:54,020 - speechbrain.utils.epoch_loop - INFO - Going into epoch 6
+2022-04-01 18:16:48,053 - speechbrain.utils.train_logger - INFO - Epoch: 6 - train loss: 1.40e-02 - valid loss: 1.65e-02, valid stoi: 9.74e-01
+2022-04-01 18:16:48,080 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-16-48+00
+2022-04-01 18:16:48,101 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-15-53+00
+2022-04-01 18:16:48,101 - speechbrain.utils.epoch_loop - INFO - Going into epoch 7
+2022-04-01 18:17:31,011 - speechbrain.utils.train_logger - INFO - Epoch: 7 - train loss: 1.35e-02 - valid loss: 1.60e-02, valid stoi: 9.75e-01
+2022-04-01 18:17:31,030 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-17-31+00
+2022-04-01 18:17:31,042 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-13-16+00
+2022-04-01 18:17:31,043 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-16-48+00
+2022-04-01 18:17:31,043 - speechbrain.utils.epoch_loop - INFO - Going into epoch 8
+2022-04-01 18:18:05,319 - speechbrain.utils.train_logger - INFO - Epoch: 8 - train loss: 1.33e-02 - valid loss: 1.58e-02, valid stoi: 9.75e-01
+2022-04-01 18:18:05,337 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-18-05+00
+2022-04-01 18:18:05,347 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-17-31+00
+2022-04-01 18:18:05,347 - speechbrain.utils.epoch_loop - INFO - Going into epoch 9
+2022-04-01 18:18:41,197 - speechbrain.utils.train_logger - INFO - Epoch: 9 - train loss: 1.32e-02 - valid loss: 1.57e-02, valid stoi: 9.75e-01
+2022-04-01 18:18:41,224 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-18-41+00
+2022-04-01 18:18:41,244 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-18-05+00
+2022-04-01 18:18:41,244 - speechbrain.utils.epoch_loop - INFO - Going into epoch 10
+2022-04-01 18:19:34,686 - speechbrain.utils.train_logger - INFO - Epoch: 10 - train loss: 1.28e-02 - valid loss: 1.44e-02, valid stoi: 9.77e-01
+2022-04-01 18:19:34,712 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-19-34+00
+2022-04-01 18:19:34,734 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-18-41+00
+2022-04-01 18:19:34,734 - speechbrain.utils.epoch_loop - INFO - Going into epoch 11
+2022-04-01 18:20:28,226 - speechbrain.utils.train_logger - INFO - Epoch: 11 - train loss: 1.12e-02 - valid loss: 1.13e-02, valid stoi: 9.80e-01
+2022-04-01 18:20:28,252 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-20-28+00
+2022-04-01 18:20:28,276 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-19-34+00
+2022-04-01 18:20:28,276 - speechbrain.utils.epoch_loop - INFO - Going into epoch 12
+2022-04-01 18:21:21,277 - speechbrain.utils.train_logger - INFO - Epoch: 12 - train loss: 9.40e-03 - valid loss: 9.89e-03, valid stoi: 9.86e-01
+2022-04-01 18:21:21,303 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-21-21+00
+2022-04-01 18:21:21,328 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-20-28+00
+2022-04-01 18:21:21,328 - speechbrain.utils.epoch_loop - INFO - Going into epoch 13
+2022-04-01 18:21:59,832 - speechbrain.utils.train_logger - INFO - Epoch: 13 - train loss: 9.03e-03 - valid loss: 9.83e-03, valid stoi: 9.86e-01
+2022-04-01 18:21:59,852 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-21-59+00
+2022-04-01 18:21:59,865 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-21-21+00
+2022-04-01 18:21:59,865 - speechbrain.utils.epoch_loop - INFO - Going into epoch 14
+2022-04-01 18:22:34,548 - speechbrain.utils.train_logger - INFO - Epoch: 14 - train loss: 8.98e-03 - valid loss: 9.79e-03, valid stoi: 9.86e-01
+2022-04-01 18:22:34,567 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-22-34+00
+2022-04-01 18:22:34,582 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-21-59+00
+2022-04-01 18:22:34,582 - speechbrain.utils.epoch_loop - INFO - Going into epoch 15
+2022-04-01 18:23:09,071 - speechbrain.utils.train_logger - INFO - Epoch: 15 - train loss: 8.94e-03 - valid loss: 9.74e-03, valid stoi: 9.86e-01
+2022-04-01 18:23:09,090 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-23-09+00
+2022-04-01 18:23:09,106 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-22-34+00
+2022-04-01 18:23:09,106 - speechbrain.utils.epoch_loop - INFO - Going into epoch 16
+2022-04-01 18:23:43,940 - speechbrain.utils.train_logger - INFO - Epoch: 16 - train loss: 8.76e-03 - valid loss: 9.56e-03, valid stoi: 9.86e-01
+2022-04-01 18:23:43,959 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-23-43+00
+2022-04-01 18:23:43,975 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-23-09+00
+2022-04-01 18:23:43,975 - speechbrain.utils.epoch_loop - INFO - Going into epoch 17
+2022-04-01 18:24:18,924 - speechbrain.utils.train_logger - INFO - Epoch: 17 - train loss: 8.67e-03 - valid loss: 9.53e-03, valid stoi: 9.86e-01
+2022-04-01 18:24:18,942 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-24-18+00
+2022-04-01 18:24:18,959 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-23-43+00
+2022-04-01 18:24:18,960 - speechbrain.utils.epoch_loop - INFO - Going into epoch 18
+2022-04-01 18:24:54,505 - speechbrain.utils.train_logger - INFO - Epoch: 18 - train loss: 8.53e-03 - valid loss: 9.07e-03, valid stoi: 9.88e-01
+2022-04-01 18:24:54,525 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-24-54+00
+2022-04-01 18:24:54,543 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-24-18+00
+2022-04-01 18:24:54,543 - speechbrain.utils.epoch_loop - INFO - Going into epoch 19
+2022-04-01 18:25:28,388 - speechbrain.utils.train_logger - INFO - Epoch: 19 - train loss: 8.25e-03 - valid loss: 9.04e-03, valid stoi: 9.88e-01
+2022-04-01 18:25:28,406 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-25-28+00
+2022-04-01 18:25:28,425 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-24-54+00
+2022-04-01 18:25:28,425 - speechbrain.utils.epoch_loop - INFO - Going into epoch 20
+2022-04-01 18:26:03,756 - speechbrain.utils.train_logger - INFO - Epoch: 20 - train loss: 8.22e-03 - valid loss: 9.02e-03, valid stoi: 9.88e-01
+2022-04-01 18:26:03,775 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-26-03+00
+2022-04-01 18:26:03,796 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-25-28+00
+2022-04-01 18:26:03,796 - speechbrain.utils.epoch_loop - INFO - Going into epoch 21
+2022-04-01 18:26:38,137 - speechbrain.utils.train_logger - INFO - Epoch: 21 - train loss: 8.19e-03 - valid loss: 8.99e-03, valid stoi: 9.88e-01
+2022-04-01 18:26:38,155 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-26-38+00
+2022-04-01 18:26:38,176 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-26-03+00
+2022-04-01 18:26:38,176 - speechbrain.utils.epoch_loop - INFO - Going into epoch 22
+2022-04-01 18:27:11,392 - speechbrain.utils.train_logger - INFO - Epoch: 22 - train loss: 8.17e-03 - valid loss: 8.97e-03, valid stoi: 9.88e-01
+2022-04-01 18:27:11,412 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-27-11+00
+2022-04-01 18:27:11,435 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-26-38+00
+2022-04-01 18:27:11,435 - speechbrain.utils.epoch_loop - INFO - Going into epoch 23
+2022-04-01 18:27:45,775 - speechbrain.utils.train_logger - INFO - Epoch: 23 - train loss: 8.15e-03 - valid loss: 8.95e-03, valid stoi: 9.88e-01
+2022-04-01 18:27:45,793 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-27-45+00
+2022-04-01 18:27:45,816 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-27-11+00
+2022-04-01 18:27:45,816 - speechbrain.utils.epoch_loop - INFO - Going into epoch 24
+2022-04-01 18:28:21,330 - speechbrain.utils.train_logger - INFO - Epoch: 24 - train loss: 8.13e-03 - valid loss: 8.93e-03, valid stoi: 9.89e-01
+2022-04-01 18:28:21,348 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-28-21+00
+2022-04-01 18:28:21,372 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-27-45+00
+2022-04-01 18:28:21,372 - speechbrain.utils.epoch_loop - INFO - Going into epoch 25
+2022-04-01 18:28:56,126 - speechbrain.utils.train_logger - INFO - Epoch: 25 - train loss: 7.44e-03 - valid loss: 7.89e-03, valid stoi: 9.90e-01
+2022-04-01 18:28:56,144 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-28-56+00
+2022-04-01 18:28:56,168 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-28-21+00
+2022-04-01 18:28:56,168 - speechbrain.utils.epoch_loop - INFO - Going into epoch 26
+2022-04-01 18:29:31,029 - speechbrain.utils.train_logger - INFO - Epoch: 26 - train loss: 7.23e-03 - valid loss: 7.87e-03, valid stoi: 9.90e-01
+2022-04-01 18:29:31,049 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-29-31+00
+2022-04-01 18:29:31,074 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-28-56+00
+2022-04-01 18:29:31,074 - speechbrain.utils.epoch_loop - INFO - Going into epoch 27
+2022-04-01 18:30:07,218 - speechbrain.utils.train_logger - INFO - Epoch: 27 - train loss: 7.21e-03 - valid loss: 7.86e-03, valid stoi: 9.90e-01
+2022-04-01 18:30:07,237 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-30-07+00
+2022-04-01 18:30:07,263 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-29-31+00
+2022-04-01 18:30:07,263 - speechbrain.utils.epoch_loop - INFO - Going into epoch 28
+2022-04-01 18:30:43,403 - speechbrain.utils.train_logger - INFO - Epoch: 28 - train loss: 7.19e-03 - valid loss: 7.84e-03, valid stoi: 9.90e-01
+2022-04-01 18:30:43,422 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-30-43+00
+2022-04-01 18:30:43,449 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-30-07+00
+2022-04-01 18:30:43,449 - speechbrain.utils.epoch_loop - INFO - Going into epoch 29
+2022-04-01 18:31:18,298 - speechbrain.utils.train_logger - INFO - Epoch: 29 - train loss: 7.17e-03 - valid loss: 7.83e-03, valid stoi: 9.90e-01
+2022-04-01 18:31:18,318 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-31-18+00
+2022-04-01 18:31:18,346 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-30-43+00
+2022-04-01 18:31:18,346 - speechbrain.utils.epoch_loop - INFO - Going into epoch 30
+2022-04-01 18:31:54,489 - speechbrain.utils.train_logger - INFO - Epoch: 30 - train loss: 7.15e-03 - valid loss: 7.82e-03, valid stoi: 9.90e-01
+2022-04-01 18:31:54,508 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-31-54+00
+2022-04-01 18:31:54,537 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-31-18+00
+2022-04-01 18:31:54,537 - speechbrain.utils.epoch_loop - INFO - Going into epoch 31
+2022-04-01 18:32:29,227 - speechbrain.utils.train_logger - INFO - Epoch: 31 - train loss: 7.14e-03 - valid loss: 7.82e-03, valid stoi: 9.90e-01
+2022-04-01 18:32:29,246 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-32-29+00
+2022-04-01 18:32:29,275 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-31-54+00
+2022-04-01 18:32:29,275 - speechbrain.utils.epoch_loop - INFO - Going into epoch 32
+2022-04-01 18:33:05,270 - speechbrain.utils.train_logger - INFO - Epoch: 32 - train loss: 7.12e-03 - valid loss: 7.81e-03, valid stoi: 9.90e-01
+2022-04-01 18:33:05,289 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-33-05+00
+2022-04-01 18:33:05,320 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-32-29+00
+2022-04-01 18:33:05,320 - speechbrain.utils.epoch_loop - INFO - Going into epoch 33
+2022-04-01 18:33:40,978 - speechbrain.utils.train_logger - INFO - Epoch: 33 - train loss: 7.10e-03 - valid loss: 7.79e-03, valid stoi: 9.90e-01
+2022-04-01 18:33:40,998 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-33-40+00
+2022-04-01 18:33:41,029 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-33-05+00
+2022-04-01 18:33:41,029 - speechbrain.utils.epoch_loop - INFO - Going into epoch 34
+2022-04-01 18:34:16,352 - speechbrain.utils.train_logger - INFO - Epoch: 34 - train loss: 7.08e-03 - valid loss: 7.78e-03, valid stoi: 9.90e-01
+2022-04-01 18:34:16,371 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-34-16+00
+2022-04-01 18:34:16,404 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-33-40+00
+2022-04-01 18:34:16,404 - speechbrain.utils.epoch_loop - INFO - Going into epoch 35
+2022-04-01 18:34:51,503 - speechbrain.utils.train_logger - INFO - Epoch: 35 - train loss: 6.95e-03 - valid loss: 6.89e-03, valid stoi: 9.92e-01
+2022-04-01 18:34:51,521 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-34-51+00
+2022-04-01 18:34:51,555 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-34-16+00
+2022-04-01 18:34:51,555 - speechbrain.utils.epoch_loop - INFO - Going into epoch 36
+2022-04-01 18:35:26,547 - speechbrain.utils.train_logger - INFO - Epoch: 36 - train loss: 6.35e-03 - valid loss: 6.86e-03, valid stoi: 9.92e-01
+2022-04-01 18:35:26,567 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-35-26+00
+2022-04-01 18:35:26,601 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-34-51+00
+2022-04-01 18:35:26,601 - speechbrain.utils.epoch_loop - INFO - Going into epoch 37
+2022-04-01 18:36:01,705 - speechbrain.utils.train_logger - INFO - Epoch: 37 - train loss: 6.32e-03 - valid loss: 6.84e-03, valid stoi: 9.92e-01
+2022-04-01 18:36:01,725 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-36-01+00
+2022-04-01 18:36:01,760 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-35-26+00
+2022-04-01 18:36:01,760 - speechbrain.utils.epoch_loop - INFO - Going into epoch 38
+2022-04-01 18:36:36,135 - speechbrain.utils.train_logger - INFO - Epoch: 38 - train loss: 6.30e-03 - valid loss: 6.84e-03, valid stoi: 9.92e-01
+2022-04-01 18:36:36,154 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-36-36+00
+2022-04-01 18:36:36,189 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-36-01+00
+2022-04-01 18:36:36,190 - speechbrain.utils.epoch_loop - INFO - Going into epoch 39
+2022-04-01 18:37:09,413 - speechbrain.utils.train_logger - INFO - Epoch: 39 - train loss: 6.29e-03 - valid loss: 6.83e-03, valid stoi: 9.92e-01
+2022-04-01 18:37:09,431 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-37-09+00
+2022-04-01 18:37:09,468 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-36-36+00
+2022-04-01 18:37:09,468 - speechbrain.utils.epoch_loop - INFO - Going into epoch 40
+2022-04-01 18:37:44,295 - speechbrain.utils.train_logger - INFO - Epoch: 40 - train loss: 6.27e-03 - valid loss: 6.82e-03, valid stoi: 9.92e-01
+2022-04-01 18:37:44,313 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-37-44+00
+2022-04-01 18:37:44,350 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-37-09+00
+2022-04-01 18:37:44,350 - speechbrain.utils.epoch_loop - INFO - Going into epoch 41
+2022-04-01 18:38:17,917 - speechbrain.utils.train_logger - INFO - Epoch: 41 - train loss: 6.25e-03 - valid loss: 6.82e-03, valid stoi: 9.92e-01
+2022-04-01 18:38:17,936 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-38-17+00
+2022-04-01 18:38:17,975 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-37-44+00
+2022-04-01 18:38:17,975 - speechbrain.utils.epoch_loop - INFO - Going into epoch 42
+2022-04-01 18:38:53,080 - speechbrain.utils.train_logger - INFO - Epoch: 42 - train loss: 6.24e-03 - valid loss: 6.81e-03, valid stoi: 9.92e-01
+2022-04-01 18:38:53,099 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-38-53+00
+2022-04-01 18:38:53,138 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-38-17+00
+2022-04-01 18:38:53,139 - speechbrain.utils.epoch_loop - INFO - Going into epoch 43
+2022-04-01 18:39:27,482 - speechbrain.utils.train_logger - INFO - Epoch: 43 - train loss: 6.22e-03 - valid loss: 6.81e-03, valid stoi: 9.92e-01
+2022-04-01 18:39:27,500 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-39-27+00
+2022-04-01 18:39:27,541 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-38-53+00
+2022-04-01 18:39:27,541 - speechbrain.utils.epoch_loop - INFO - Going into epoch 44
+2022-04-01 18:40:02,210 - speechbrain.utils.train_logger - INFO - Epoch: 44 - train loss: 6.21e-03 - valid loss: 6.80e-03, valid stoi: 9.92e-01
+2022-04-01 18:40:02,230 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-40-02+00
+2022-04-01 18:40:02,271 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-39-27+00
+2022-04-01 18:40:02,271 - speechbrain.utils.epoch_loop - INFO - Going into epoch 45
+2022-04-01 18:40:37,630 - speechbrain.utils.train_logger - INFO - Epoch: 45 - train loss: 6.13e-03 - valid loss: 6.52e-03, valid stoi: 9.93e-01
+2022-04-01 18:40:37,649 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-40-37+00
+2022-04-01 18:40:37,691 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-40-02+00
+2022-04-01 18:40:37,691 - speechbrain.utils.epoch_loop - INFO - Going into epoch 46
+2022-04-01 18:41:13,516 - speechbrain.utils.train_logger - INFO - Epoch: 46 - train loss: 5.59e-03 - valid loss: 5.92e-03, valid stoi: 9.94e-01
+2022-04-01 18:41:13,535 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-41-13+00
+2022-04-01 18:41:13,577 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-40-37+00
+2022-04-01 18:41:13,578 - speechbrain.utils.epoch_loop - INFO - Going into epoch 47
+2022-04-01 18:41:48,656 - speechbrain.utils.train_logger - INFO - Epoch: 47 - train loss: 5.32e-03 - valid loss: 5.91e-03, valid stoi: 9.94e-01
+2022-04-01 18:41:48,675 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-41-48+00
+2022-04-01 18:41:48,718 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-41-13+00
+2022-04-01 18:41:48,719 - speechbrain.utils.epoch_loop - INFO - Going into epoch 48
+2022-04-01 18:42:24,094 - speechbrain.utils.train_logger - INFO - Epoch: 48 - train loss: 5.31e-03 - valid loss: 5.90e-03, valid stoi: 9.94e-01
+2022-04-01 18:42:24,113 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-42-24+00
+2022-04-01 18:42:24,158 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-41-48+00
+2022-04-01 18:42:24,158 - speechbrain.utils.epoch_loop - INFO - Going into epoch 49
+2022-04-01 18:42:58,933 - speechbrain.utils.train_logger - INFO - Epoch: 49 - train loss: 5.29e-03 - valid loss: 5.89e-03, valid stoi: 9.94e-01
+2022-04-01 18:42:58,953 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-42-58+00
+2022-04-01 18:42:58,998 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-42-24+00
+2022-04-01 18:42:58,998 - speechbrain.utils.epoch_loop - INFO - Going into epoch 50
+2022-04-01 18:43:32,428 - speechbrain.utils.train_logger - INFO - Epoch: 50 - train loss: 5.28e-03 - valid loss: 5.89e-03, valid stoi: 9.94e-01
+2022-04-01 18:43:32,447 - speechbrain.utils.checkpoints - INFO - Saved an end-of-epoch checkpoint in results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:43:32,493 - speechbrain.utils.checkpoints - INFO - Deleted checkpoint in results3/4234/save/CKPT+2022-04-01+18-42-58+00
+2022-04-01 18:43:32,493 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:43:32,496 - root - DEBUG - SaveableDataLoader was requested to load a checkpoint, but the DataLoader has already been iterated. The DataLoader file will be ignored. This is normal in evaluation, when a checkpoint is loaded just to retrieve the best model.
+2022-04-01 18:43:40,036 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rujiawei/Gitprojects/f2net/train3.py", line 319, in <module>
+    test_stats = se_brain.evaluate(
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 1193, in evaluate
+    loss = self.evaluate_batch(batch, stage=Stage.TEST)
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 930, in evaluate_batch
+    loss = self.compute_objectives(out, batch, stage=stage)
+  File "/home/rujiawei/Gitprojects/f2net/train3.py", line 135, in compute_objectives
+    os.mkdir("test_result")
+FileExistsError: [Errno 17] File exists: 'test_result'
+2022-04-01 18:44:26,805 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 18:44:26,805 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 18:44:26,943 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 18:44:26,947 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 18:44:26,980 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 18:44:29,003 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 18:44:29,004 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:44:29,021 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:45:05,218 - speechbrain.utils.train_logger - INFO - Epoch loaded: 50 - test loss: 6.88e-03, test stoi: 9.93e-01
+2022-04-01 18:54:53,976 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 18:54:53,976 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 18:54:54,110 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 18:54:54,115 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 18:54:54,125 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 18:54:57,157 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 18:54:57,158 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:54:57,192 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:55:10,284 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "/home/rujiawei/Gitprojects/f2net/train3.py", line 321, in <module>
+    test_stats = se_brain.evaluate(
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 1193, in evaluate
+    loss = self.evaluate_batch(batch, stage=Stage.TEST)
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/speechbrain/core.py", line 930, in evaluate_batch
+    loss = self.compute_objectives(out, batch, stage=stage)
+  File "/home/rujiawei/Gitprojects/f2net/train3.py", line 142, in compute_objectives
+    torchaudio.save(f"./test_result3/input{i}.flac", torch.unsqueeze(noisy_wavs[i], 0), 16000)
+  File "/home/rujiawei/Softwares/anaconda/envs/f1net/lib/python3.9/site-packages/torchaudio/backend/sox_io_backend.py", line 320, in save
+    torch.ops.torchaudio.sox_io_save_audio_file(
+RuntimeError: Input tensor has to be on CPU.
+2022-04-01 18:55:38,955 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 18:55:38,955 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 18:55:39,093 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 18:55:39,097 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 18:55:39,132 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 18:55:47,515 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 18:55:47,515 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 18:55:47,648 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 18:55:47,651 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 18:55:47,674 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 18:55:49,659 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 18:55:49,660 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:55:49,679 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 18:56:25,424 - speechbrain.utils.train_logger - INFO - Epoch loaded: 50 - test loss: 6.88e-03, test stoi: 9.93e-01
+2022-04-01 19:08:54,406 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 19:08:54,406 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 19:08:54,546 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 19:08:54,550 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 19:08:54,571 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 19:08:57,616 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 19:08:57,617 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 19:38:08,334 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 19:38:08,334 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 19:38:08,468 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 19:38:08,472 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 19:38:08,503 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 19:38:10,542 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 19:38:10,542 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00
+2022-04-01 19:41:31,495 - speechbrain.core - INFO - Beginning experiment!
+2022-04-01 19:41:31,495 - speechbrain.core - INFO - Experiment folder: ./results3/4234
+2022-04-01 19:41:31,639 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+audioread==2.1.9
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.12
+cycler==0.11.0
+decorator==5.1.1
+filelock==3.6.0
+fonttools==4.31.2
+huggingface-hub==0.4.0
+HyperPyYAML==1.0.0
+idna==3.3
+joblib==1.1.0
+kiwisolver==1.4.1
+librosa==0.9.1
+llvmlite==0.38.0
+matplotlib==3.5.1
+numba==0.55.1
+numpy==1.21.5
+packaging==21.3
+Pillow==9.0.1
+pooch==1.6.0
+pycparser==2.21
+pyparsing==3.0.7
+python-dateutil==2.8.2
+PyYAML==6.0
+requests==2.27.1
+resampy==0.2.2
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+six==1.16.0
+SoundFile==0.10.3.post1
+speechbrain==0.5.11
+threadpoolctl==3.1.0
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchsummary==1.5.1
+torchvision==0.12.0+cu113
+tqdm==4.63.0
+typing_extensions==4.1.1
+urllib3==1.26.9
+
+
+2022-04-01 19:41:31,643 - speechbrain.utils.superpowers - DEBUG - 9657ce6
+
+
+2022-04-01 19:41:31,676 - mini_librispeech_prepare - INFO - Preparation completed in previous run, skipping.
+2022-04-01 19:41:34,704 - speechbrain.core - INFO - 1.9M trainable parameters in SEBrain
+2022-04-01 19:41:34,705 - speechbrain.utils.checkpoints - INFO - Loading a checkpoint from results3/4234/save/CKPT+2022-04-01+18-43-32+00

@@ -318,24 +318,24 @@ if __name__ == "__main__":
     )
 
     # Load best checkpoint (highest STOI) for evaluation
-    test_stats = se_brain.evaluate(
-        test_set=datasets["test"],
-        max_key="stoi",
-        test_loader_kwargs=hparams["dataloader_options"],
-    )
+    # test_stats = se_brain.evaluate(
+    #     test_set=datasets["test"],
+    #     max_key="stoi",
+    #     test_loader_kwargs=hparams["dataloader_options"],
+    # )
 
     # output a file inferred by the model(normalize)
 
-    # wav, sr = torchaudio.load("./。。。")
-    # upsample = torchaudio.transforms.Resample(8000, 16000)
-    # noisy_sig = upsample(wav)
-    # noisy_sig = noisy_sig.squeeze(0)
-    # batch = sb.dataio.batch.PaddedBatch([{"noisy_sig": noisy_sig}])
-    # dic = se_brain.compute_forward(batch, sb.Stage.TEST)
-    # bwe = dic["wav"].to('cpu')
-    # print(bwe.shape)
-    # bwe = bwe.squeeze(0)
-    # sb.dataio.dataio.write_audio("./。。。", bwe, 16000)
+    wav, sr = torchaudio.load("./Female_8k.wav")
+    upsample = torchaudio.transforms.Resample(8000, 16000)
+    noisy_sig = upsample(wav)
+    noisy_sig = noisy_sig.squeeze(0)
+    batch = sb.dataio.batch.PaddedBatch([{"noisy_sig": noisy_sig}])
+    dic = se_brain.compute_forward(batch, sb.Stage.TEST)
+    bwe = dic["wav"].to('cpu')
+    print(bwe.shape)
+    bwe = bwe.squeeze(0)
+    sb.dataio.dataio.write_audio("./Female_16k.wav", bwe, 16000)
 
 
 
